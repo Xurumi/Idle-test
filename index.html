@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Incremental TestBed</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div id="paused">
+        <h1>PAUSED<br />Click anywhere to continue...</h1>
+    </div>
+    <div id="container">
+        <div id="idleprogress">
+            <div id="progressvalue"></div>
+        </div>
+        <div id="leftside">
+            <h1>Meditation: <span id="meditation">0</span></h1>
+            <input type="button" id="rolld6" value="Roll D6" />
+            <input type="button" id="pause" value="Pause" />
+            <br /><br />
+            <input type="button" id="save" value="Save" />
+            <input type="button" id="load" value="Load" />
+            <input type="button" id="delete" value="Delete" />
+        </div>
+        <div id="rightside">
+            <ul id="levelling"></ul>
+            <ul id="items"></ul>
+        </div>
+        <br /><br />
+        <div id="status"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="engine.js"></script>
+</body>
+</html>
